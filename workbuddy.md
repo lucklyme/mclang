@@ -71,7 +71,7 @@ WorkBuddy 侧配置（`~/.workbuddy/mcp.json`）：
   `bill.py` 小票引擎、`mcp_live.py` 实时接入、`cli.py` 命令行）
 - 示例程序：`examples/`（hello / add / cat / cn / mclang）
 - 真实数据快照：`data/nutrition.json`（MCP 真实返回）
-- 单元测试：`tests/test_mclang.py`（29 项，全部通过）
+- 单元测试：`tests/test_mclang.py`（31 项，全部通过）
 - 一键演示：`demo.py`（零第三方依赖、零 Token 可跑）
 - 参赛文档：`README.md` / `CONTEST_DECLARATION.md` / `MCP_INTEGRATION.md` / `mcp-config.example.json` / 本文件
 
