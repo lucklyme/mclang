@@ -188,6 +188,24 @@ class TestBill(unittest.TestCase):
         expected = bill.total_kcal / self.nutrition["巨无霸"].kcal_per_unit
         self.assertAlmostEqual(bill.bigmac_equiv, expected, places=6)
 
+    def test_intro_example_prints_A(self):
+        """入门例子：65 块麦乐鸡 + 出餐 == 字母 A（ASCII 65）。"""
+        res = VM().run(parse(load_example("a.mclang")))
+        self.assertEqual(res.output, "A")
+        self.assertEqual(res.steps, 66)
+        self.assertEqual(res.counts["麦乐鸡"], 65)
+        self.assertEqual(res.counts["香芋派"], 1)
+
+    def test_all_examples_parse_and_run(self):
+        """examples/ 下的示例都必须能被解析并成功执行。"""
+        ex_dir = os.path.join(os.path.dirname(__file__), "..", "examples")
+        files = sorted(f for f in os.listdir(ex_dir) if f.endswith(".mclang"))
+        self.assertIn("a.mclang", files)
+        for name in files:
+            prog = parse(load_example(name))
+            # cat.mclang 读 stdin，给点输入避免空转
+            VM(step_limit=200000).run(prog, stdin_data="麦麦")  # 不抛异常即通过
+
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)
