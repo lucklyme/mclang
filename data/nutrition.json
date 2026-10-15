@@ -1,0 +1,88 @@
+{
+  "_source": "麦当劳 MCP Server · list-nutrition-foods（真实接口返回值，2026-10-15 抓取）",
+  "_note": "每条指令对应一个真实在售餐品，营养字段取自接口原始返回，未做人工修改。",
+  "_fetched_at": "2026-10-15 22:56:30",
+  "foods": {
+    "麦乐鸡": {
+      "mcp_name": "麦乐鸡5块",
+      "energy_kcal": 213,
+      "protein_g": 12,
+      "fat_g": 12,
+      "carbohydrate_g": 13,
+      "sodium_mg": 422,
+      "calcium_mg": 9,
+      "pieces_per_serving": 5,
+      "_comment": "+1 = 往餐盘里放一块麦乐鸡，故单块热量 = 213 / 5"
+    },
+    "苹果片": {
+      "mcp_name": "苹果片",
+      "energy_kcal": 32,
+      "protein_g": 0,
+      "fat_g": 0,
+      "carbohydrate_g": 7,
+      "sodium_mg": 0,
+      "calcium_mg": 18,
+      "pieces_per_serving": 1
+    },
+    "巨无霸": {
+      "mcp_name": "巨无霸",
+      "energy_kcal": 513,
+      "protein_g": 27,
+      "fat_g": 26,
+      "carbohydrate_g": 42,
+      "sodium_mg": 961,
+      "calcium_mg": 171,
+      "pieces_per_serving": 1
+    },
+    "迷你薯条": {
+      "mcp_name": "迷你薯条",
+      "energy_kcal": 106,
+      "protein_g": 2,
+      "fat_g": 4,
+      "carbohydrate_g": 14,
+      "sodium_mg": 61,
+      "calcium_mg": 6,
+      "pieces_per_serving": 1
+    },
+    "香芋派": {
+      "mcp_name": "香芋派",
+      "energy_kcal": 232,
+      "protein_g": 2,
+      "fat_g": 12,
+      "carbohydrate_g": 28,
+      "sodium_mg": 159,
+      "calcium_mg": 7,
+      "pieces_per_serving": 1
+    },
+    "圆筒冰淇淋": {
+      "mcp_name": "圆筒冰淇淋",
+      "energy_kcal": 93,
+      "protein_g": 2,
+      "fat_g": 3,
+      "carbohydrate_g": 14,
+      "sodium_mg": 36,
+      "calcium_mg": 77,
+      "pieces_per_serving": 1
+    },
+    "板烧鸡腿堡": {
+      "mcp_name": "板烧鸡腿堡",
+      "energy_kcal": 391,
+      "protein_g": 23,
+      "fat_g": 17,
+      "carbohydrate_g": 35,
+      "sodium_mg": 1041,
+      "calcium_mg": 93,
+      "pieces_per_serving": 1
+    },
+    "麦香鱼": {
+      "mcp_name": "麦香鱼",
+      "energy_kcal": 325,
+      "protein_g": 16,
+      "fat_g": 13,
+      "carbohydrate_g": 35,
+      "sodium_mg": 556,
+      "calcium_mg": 99,
+      "pieces_per_serving": 1
+    }
+  }
+}
